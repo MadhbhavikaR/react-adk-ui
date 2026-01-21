@@ -1,0 +1,92 @@
+.state-tab {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.state-wrapper {
+  max-width: 100%;
+}
+
+.state-wrapper h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 16px;
+}
+
+.state-content {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.state-header {
+  padding: 15px 20px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.state-header h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.state-info {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  color: #666;
+}
+
+.json-viewer-container {
+  padding: 20px;
+  background-color: #f8f9ff;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.json-container {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.json-pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.state-actions {
+  padding: 15px 20px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.copy-button, .download-button {
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.copy-button:hover, .download-button:hover {
+  background-color: #f0f0f0;
+}
+
+.copy-button:active, .download-button:active {
+  background-color: #e0e0e0;
+}

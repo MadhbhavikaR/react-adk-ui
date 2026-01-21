@@ -1,0 +1,293 @@
+.evaluations-page {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.evaluations-page h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.eval-controls {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.eval-set-selector {
+  flex: 1;
+}
+
+.eval-set-selector label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.eval-set-select {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.run-eval-button {
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.run-eval-button:hover:not(:disabled) {
+  background-color: #3367d6;
+}
+
+.run-eval-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.loading-indicator {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 16px;
+}
+
+.error-message {
+  text-align: center;
+  padding: 20px;
+  color: #d32f2f;
+  background-color: #fde0e0;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 16px;
+}
+
+.eval-cases-section {
+  margin-top: 25px;
+}
+
+.eval-cases-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.eval-cases-title {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}
+
+.eval-cases-actions {
+  font-size: 14px;
+  color: #666;
+}
+
+.eval-cases-actions input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.eval-cases-list {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.eval-case-item {
+  padding: 15px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.eval-case-item:hover {
+  background-color: #f8f9ff;
+}
+
+.eval-case-item.selected {
+  background-color: #e3f2fd;
+}
+
+.eval-case-item:last-child {
+  border-bottom: none;
+}
+
+.eval-case-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.eval-case-select {
+  display: flex;
+  align-items: center;
+}
+
+.eval-case-select input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.eval-case-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.eval-case-name {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.eval-case-description {
+  font-size: 13px;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.eval-case-status {
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.status-pass {
+  background-color: #e6f4ea;
+  color: #2e7d32;
+}
+
+.status-fail {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.status-pending {
+  background-color: #e0e0e0;
+  color: #616161;
+}
+
+.eval-case-details-panel {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f9ff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.eval-case-details-panel h3 {
+  color: #4285f4;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.eval-detail-row {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.detail-label {
+  width: 120px;
+  color: #666;
+  font-weight: 500;
+}
+
+.detail-value {
+  color: #333;
+  flex: 1;
+}
+
+.eval-metrics-section {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.eval-metrics-section h4 {
+  color: #333;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.eval-metrics-list {
+  display: grid;
+  gap: 12px;
+}
+
+.eval-metric-item {
+  padding: 12px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.metric-name {
+  font-size: 13px;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.metric-description {
+  font-size: 12px;
+  color: #666;
+}
+
+.eval-results-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.eval-results-section h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.eval-results-summary {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.summary-item {
+  padding: 8px 15px;
+  border-radius: 4px;
+}
+
+.summary-item.pass {
+  background-color: #e6f4ea;
+  color: #2e7d32;
+}
+
+.summary-item.fail {
+  background-color: #ffebee;
+  color: #c62828;
+}

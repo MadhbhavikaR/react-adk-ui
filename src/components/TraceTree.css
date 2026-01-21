@@ -1,0 +1,102 @@
+.trace-tree-container {
+  margin-top: 15px;
+}
+
+.invocation-id-container {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.invocation-id {
+  font-weight: bold;
+  color: #333;
+}
+
+.trace-container {
+  font-family: 'Roboto', sans-serif;
+}
+
+.trace-row {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.trace-row:hover {
+  background-color: #f5f5f5;
+}
+
+.trace-row.selected {
+  background-color: #e3f2fd;
+}
+
+.trace-row-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.trace-indent {
+  display: flex;
+  margin-right: 8px;
+}
+
+.indent-connector {
+  width: 20px;
+  height: 1px;
+  background-color: #ccc;
+  margin-right: 4px;
+}
+
+.material-symbols-outlined {
+  font-size: 18px;
+  margin-right: 8px;
+  color: #666;
+}
+
+.trace-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color: #333;
+}
+
+.trace-bar-container {
+  position: relative;
+  width: 300px;
+  height: 24px;
+  margin-left: 16px;
+}
+
+.trace-bar {
+  position: absolute;
+  height: 20px;
+  background-color: #4285f4;
+  border-radius: 2px;
+  font-size: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.short-trace-bar-duration {
+  position: absolute;
+  font-size: 10px;
+  color: #666;
+  white-space: nowrap;
+}
+
+.is-event-row {
+  color: #1a73e8;
+  font-weight: 500;
+}

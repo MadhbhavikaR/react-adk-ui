@@ -1,0 +1,168 @@
+.sessions-page {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sessions-page h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.sessions-controls {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.filter-control {
+  flex: 1;
+}
+
+.filter-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.filter-input:focus {
+  outline: none;
+  border-color: #4285f4;
+}
+
+.loading-indicator {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 16px;
+}
+
+.error-message {
+  text-align: center;
+  padding: 20px;
+  color: #d32f2f;
+  background-color: #fde0e0;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 16px;
+}
+
+.sessions-list {
+  margin-top: 20px;
+}
+
+.session-item {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.session-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+.session-item.selected {
+  border-color: #4285f4;
+  background-color: #f8f9ff;
+}
+
+.session-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.session-id {
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+}
+
+.session-time {
+  font-size: 12px;
+  color: #666;
+}
+
+.session-details {
+  font-size: 13px;
+  color: #555;
+}
+
+.session-meta {
+  display: flex;
+  gap: 15px;
+}
+
+.session-app, .session-user {
+  color: #666;
+}
+
+.load-more-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 20px;
+}
+
+.load-more-button:hover:not(:disabled) {
+  background-color: #e0e0e0;
+}
+
+.load-more-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.session-details-panel {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f9ff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.session-details-panel h3 {
+  color: #4285f4;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.session-detail-row {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.detail-label {
+  width: 120px;
+  color: #666;
+  font-weight: 500;
+}
+
+.detail-value {
+  color: #333;
+  flex: 1;
+}
