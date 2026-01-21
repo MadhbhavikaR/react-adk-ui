@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useAgentStore } from '../stores/agentStore'
 import { useSessionStore } from '../stores/sessionStore'
 import { streamEvents } from '../services/eventStream'
+import { MessageList } from './MessageList'
 
 export const ChatInterface = () => {
   const [message, setMessage] = useState('')

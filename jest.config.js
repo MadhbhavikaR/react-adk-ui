@@ -1,5 +1,7 @@
 // Jest configuration for React ADK Web
-module.exports = {
+import { defaults as tsjPreset } from 'ts-jest/presets'
+
+export default {
   // Test environment
   testEnvironment: 'jsdom',
   
@@ -14,7 +16,7 @@ module.exports = {
   
   // Transform files
   transform: {
-    '^.+\.(ts|tsx)$': 'ts-jest',
+    ...tsjPreset.transform,
   },
   
   // Module name mapper for CSS and other assets
